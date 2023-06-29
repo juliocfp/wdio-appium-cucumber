@@ -3,8 +3,7 @@
     "license": "MIT",
     "scripts": {
         "run:android": "./node_modules/.bin/wdio ./config/wdio.android.conf.js",
-        "report:generate": "yarn allure generate --clean ./test-report/allure-result/ -o ./test-report/allure-report && allure open test-report/allure-report",
-        "report:open": "yarn allure open test-report/allure-report"
+        "report:show": "yarn allure generate --clean ./test-report/allure-result/ -o ./test-report/allure-report && allure open test-report/allure-report"
     },
     "repository": {
         "type": "git",

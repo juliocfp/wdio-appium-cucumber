@@ -7,8 +7,8 @@ exports.config = {
     outputDir: './test-report/output',
     bail: 0,
     baseUrl: 'http://the-internet.herokuapp.com',
-    waitforTimeout: 600,
-    connectionRetryTimeout: 900,
+    waitforTimeout: 6000,
+    connectionRetryTimeout: 9000,
     connectionRetryCount: 3,
     specs: ['tests/features/**/*.feature'],
     reporters: [

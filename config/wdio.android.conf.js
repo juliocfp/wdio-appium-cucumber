@@ -15,7 +15,6 @@ config.capabilities = [
             process.cwd(),
             './apps/nuclone.apk',
         ),
-        'appium:newCommandTimeout': 240,
     },
 ];
 

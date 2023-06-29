@@ -14,7 +14,6 @@
       "@babel/cli": "^7.7.0",
       "@babel/core": "^7.7.2",
       "@babel/node": "^7.7.0",
-      "@babel/polyfill": "^7.7.0",
       "@babel/preset-env": "^7.7.1",
       "@babel/register": "^7.7.0",
       "@wdio/allure-reporter": "^5.16.0",
@@ -24,7 +23,6 @@
       "@wdio/spec-reporter": "^5.16.5",
       "allure-commandline": "^2.13.0",
       "cucumber": "^6.0.4",
-      "prettier": "^1.19.1",
       "webdriverio": "^5.16.6"
     }
   }

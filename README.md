@@ -15,3 +15,73 @@ Este boilerplate fornece uma estrutura básica para realizar testes de interface
 [WebDriverIO]: <https://webdriver.io/>
 [Cucumber]: <https://cucumber.io/>
 [Node.js]: <https://nodejs.org/>
+
+## Pré-requisitos
+
+Antes de começar, verifique se você possui o seguinte instalado em seu ambiente:
+
+- Node.js (versão 12 ou superior)
+- Appium (instalado globalmente)
+- Android SDK configurado e emulador ou dispositivo Android conectado
+
+## Configuração do Projeto
+
+Siga as etapas abaixo para configurar o projeto:
+
+1. Clone o repositório em seu computador:
+```javascript
+git clone https://github.com/juliocfp/mottu-wdio-appium-boilerplate.git
+```
+2. Navegue até o diretório do projeto.
+3. Instale as dependências do projeto:
+```javascript
+npm install
+```
+4. Configure as informações do dispositivo e aplicativo no arquivo **wdio.conf** e **wdio.android.conf**.
+- Defina as informações do dispositivo no objeto capabilities:
+```javascript
+capabilities: [{
+  platformName: 'Android',
+  deviceName: 'Nome do dispositivo',
+  appPackage: 'pacote.do.aplicativo',
+  appActivity: 'atividade.do.aplicativo'
+}],
+```
+- Defina as informações de conexão do Appium no objeto services:
+```javascript
+services: ['appium'],
+appium: {
+  command: 'appium',
+},
+```
+
+### Criando seus testes
+
+- Crie arquivos **.feature** no diretório **tests/features**, escritos em gherkin na linguagem natural BDD:
+```gherkin
+# language: pt
+Funcionalidade: Nome da Funcionalidade
+  Cenário: Nome do Cenário
+    Dado ...
+    Quando ...
+    Então ...
+```
+
+- Implemente os steps dos cenários em arquivos **.js** no diretório **test/steps**:
+```javascript
+import { Given, When, Then } from 'cucumber';
+
+Given(/^<SEU STEP AQU>$/, async () => {
+    //Seu código aqui
+});
+
+When(/^<SEU STEP AQU>$/, async () => {
+    //Seu código aqui
+});
+
+Then(/^<SEU STEP AQU>$/, async () => {
+    //Seu código aqui
+});
+```
+
+## Executando os Testes

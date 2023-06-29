@@ -1,0 +1,31 @@
+{
+    "name": "mottu-wdio-appium-boilerplate",
+    "license": "MIT",
+    "scripts": {
+      "run:android": "./node_modules/.bin/wdio ./config/wdio.android.conf.js",
+      "report:generate": "yarn report:allure generate --clean ./test-report/allure-result/ -o ./test-report/allure-report",
+      "report:open": "yarn report:allure open test-report/allure-report"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/juliocfp/mottu-wdio-appium-boilerplate.git"
+    },
+    "dependencies": {
+      "@babel/cli": "^7.7.0",
+      "@babel/core": "^7.7.2",
+      "@babel/node": "^7.7.0",
+      "@babel/polyfill": "^7.7.0",
+      "@babel/preset-env": "^7.7.1",
+      "@babel/register": "^7.7.0",
+      "@wdio/allure-reporter": "^5.16.0",
+      "@wdio/cli": "^5.16.6",
+      "@wdio/cucumber-framework": "^5.16.6",
+      "@wdio/local-runner": "^5.16.6",
+      "@wdio/spec-reporter": "^5.16.5",
+      "allure-commandline": "^2.13.0",
+      "cucumber": "^6.0.4",
+      "prettier": "^1.19.1",
+      "webdriverio": "^5.16.6"
+    }
+  }
+  

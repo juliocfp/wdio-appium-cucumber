@@ -22,6 +22,7 @@ Antes de começar, verifique se você possui o seguinte instalado em seu ambient
 
 - Node.js (versão 12 ou superior)
 - Appium (instalado globalmente)
+- Yarn (instalado globalmente)
 - Android SDK configurado e emulador ou dispositivo Android conectado
 
 ## Configuração do Projeto
@@ -85,3 +86,28 @@ Then(/^<SEU STEP AQU>$/, async () => {
 ```
 
 ## Executando os Testes
+
+Para executar os testes, precisaremos do servidor Appium e do gerenciador de dependências Yarn.
+
+- Inicie o servidor do Appium:
+```javascript
+appium
+```
+- Em um novo terminal, execute os testes usando o seguinte comando:
+```javascript
+yarn run:android
+```
+Os testes serão executados de acordo com os cenários definidos nas features. Os logs e resultados dos testes serão exibidos no terminal.
+
+
+Para visualizar o relatório gerado pelo Allure, apenas execute o comando:
+```javascript
+yarn report:show
+```
+Isso fará com que um html seja exibido com as principais informações da execução.
+
+## Conclusão
+
+Este projeto boilerplate fornece uma estrutura básica para realizar testes de interface em um aplicativo Android usando as ferramentas Appium, WebDriverIO e Cucumber. Você pode personalizar e expandir este projeto de acordo com as necessidades do seu aplicativo.
+
+Certifique-se de configurar corretamente as informações do dispositivo e aplicativo nos arquivos **wdio.android.conf.js** e **wdio.conf.js** antes de executar os testes.

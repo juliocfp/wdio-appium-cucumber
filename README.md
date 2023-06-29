@@ -2,7 +2,7 @@
 
 <img src="https://appium.io/docs/en/2.0/assets/images/appium-logo-horiz.png" width="450" height="100"> <img src="https://cucumber.io/cucumber/media/images/logos/icons/cucumber-open-icon.svg" width="100" height="100"> <img src="https://webdriver.io/img/logo-webdriver-io.png" width="100" height="100">
 
-Este boilerplate fornece uma estrutura básica para realizar testes de interface em um aplicativo Android. Utilizando as ferramentas Appium, WebDriverIO e Cucumber, você poderá escrever testes em uma linguagem natural compreensível por todas as partes interessadas no projeto.
+Este boilerplate fornece uma estrutura básica para realizar testes de interface em um aplicativo Android. Utilizando as ferramentas Appium, WebDriverIO e Cucumber, você poderá escrever testes em uma linguagem natural compreensível por todas as partes interessadas no projeto. Passo a passo referente ao sistema operacional Windows.
 
 ## Tecnologias Utilizadas
 

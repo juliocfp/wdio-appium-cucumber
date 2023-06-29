@@ -89,6 +89,7 @@ Then(/^<SEU STEP AQU>$/, async () => {
 
 Para executar os testes, precisaremos do servidor Appium e do gerenciador de dependências Yarn.
 
+- Abra o emulador Android pelo Android Studio.
 - Inicie o servidor do Appium:
 ```javascript
 appium

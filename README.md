@@ -31,7 +31,7 @@ Siga as etapas abaixo para configurar o projeto:
 
 1. Clone o repositório em seu computador:
 ```javascript
-git clone https://github.com/juliocfp/mottu-wdio-appium-boilerplate.git
+git clone https://github.com/juliocfp/wdio-appium-boilerplate.git
 ```
 2. Navegue até o diretório do projeto.
 3. Instale as dependências do projeto:
